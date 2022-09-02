@@ -3,7 +3,7 @@ import { fetchPictures } from '../js/fetchPictures';
 import { renderMarkup } from "../js/renderMarkup";
 import render from '../templates/render.hbs';
 import SimpleLightbox from 'simplelightbox';
-// import 'simplelightbox/dist/simple-lightbox.min.css';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 import Notiflix from 'notiflix';
 
 refs.btnSubmit.addEventListener('submit', onFormSubmit);
