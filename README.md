@@ -1,6 +1,6 @@
 **Read in other languages: [Русский](README.md), [Polski](README.pl.md).**
 
-# Parcel template
+## Parcel template
 
 Этот проект был создан при помощи Parcel. Для знакомства и настройки
 дополнительных возможностей [обратись к документации](https://parceljs.org/).
