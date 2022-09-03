@@ -1,8 +1,19 @@
-import { fetchPictures } from "./js/fetchPictures";
-import Notiflix, { Notify } from "notiflix";
-import render from './templates/render.hbs';
-import { renderMarkup } from "./js/renderMarkup";
+
 import refs from './js/refs';
 import { onFormSubmit } from './js/onFormSubmit';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
-//import simpleLightbox from "../node_modules/simplelightbox";
+
+refs.btnSubmit.addEventListener('submit', onFormSubmit);
+ 
+
+
+export let lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionDelay: 250,
+    showCounter: false,
+    captionType: "attr",
+});
+
+
