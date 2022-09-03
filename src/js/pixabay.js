@@ -8,8 +8,7 @@ import { observer } from './onFormSubmit';
 export async function pixabay(searchName, page) {
     try {
         const data = await fetchPictures(searchName, page);
-        const hits = await data.hits;
-        console.log(data)
+        const hits = await data.hits;        
 
         if (hits.length === 0) {
             Notiflix.Notify.failure('Sorry, there are no images matching your search query. Please try again.');
